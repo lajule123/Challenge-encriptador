@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0%;
+  padding: 0%;
+
+  :root{
+    --fonte-primaria:"Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+  }
+}
+
+
+body{
+background-image: url(/encriptar_1.jpg);
+box-sizing: border-box;
+
+}
+
+.cabecalho{
+  padding: 3% 0% 0% 15%;
+}
+
+.logo{
+  margin-left: 10px;
+  padding-top: 10px;
+  width: 2%;
+  
+}
+
+main{
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+
+
+.text_area{
+    border: none;
+    color:#0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder{color: #0A3871;}
+.text_area:focus{
+    outline: none;
+    font-size: 22px;
+}
+
+.botoes{
+  display: flex;
+  margin-top: 18px;
+  
+}
+
+.btn_encriptar{
+  width: 150px;
+  padding: 5px;
+  margin: 0.25rem ;
+  background: #0A3871;
+  color:#f7f6bc;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn_desencriptar{
+  width: 150px;
+  padding: 5px;
+  background: #D8DFE8;
+  margin: 0.25rem ;
+  color: #0A3871;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+.text_area_mensagem{
+  border-radius: 24px;
+  color: #f7f6bc;
+  margin-left: 50px;
+  margin-top: 250px;
+  padding-left: 20px;
+}
+
+.mensagem{
+  display: flex;
+  background: white;
+  background-image:url(assets/boneco.png);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 24px;
+  color: #0A3871;
+  margin-left: 98px;
+  margin-top: 20px;
+  padding-left: 20px;
+  position: fixed; 
+  padding-bottom: 20px;
+}
+
+
+.btn_copiar{
+  border: 1px solid #0A3871;
+  border: radius 24px; 
+  color: #0A3871;
+  cursor: pointer;
+  height: 67px;
+  margin-left: 108px;
+  margin-top: 402px;
+  position: absolute;
+  width: 336px;
+  position: fixed;
+}
+
+@media(max-width:720px){
+  .logo{
+    width: 20%;
+    background:#f7f6bc ;
+  }
+
+  h6{
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  main{
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .text_area{
+    margin-top: 10px;
+    font-size: 0.50rem;
+  }
+
+  ::placeholder{color: #0a3871;}
+.text_area:focus{
+    outline: none;
+    font-size: 9px;
+}
+   
+  .text_area_mensagem{
+    flex-direction: column;
+    margin-left: auto;
+    margin-top: 30px;
+   
+  }
+ .informacao{
+  margin-left: 10px ;
+  font-size: 18px;
+  font-weight: bold;
+  color:#495057;
+  font-family: var(--fonte-primaria);
+}
+.footer_class span{
+  color: var(--main-white-color);
+}
+
+}

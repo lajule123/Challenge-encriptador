@@ -1,0 +1,64 @@
+<DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Neucha&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Encripitador</title>
+
+</head>
+
+<body>
+   
+
+    <header>
+   
+        <img class="logo" src="assets/logoalura.png" alt="Alura">
+       
+    
+    </header>
+
+
+ <main>
+    <section>
+      <textarea class="text_area" cols="41" rows="4" placeholder="Digite seu texto:"></textarea>
+      <div class="informacao">
+      <h6>Apenas letras minúsculas e sem acento.</h6>
+    
+      <div class="botoes">
+      <button class="btn_encriptar" onclick="btnEncriptar()">Criptografar</button>
+      <button class="btn_desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+      </div>
+    </section>
+
+    <section>
+      <textarea class="mensagem" cols="20" rows="10"></textarea>
+
+      <div>
+      <button class="btn_copiar" onclick="btnCopiar()">Copiar</button>
+
+      </div>
+    
+    </section>
+
+           
+  </main>
+
+ <footer class="footer">
+      <div class="footer_class">
+        <p>
+          <span>&copy</span> Desenvolvido por Lenilda Rocha - 2024
+        </p>
+      </div>
+      
+    </footer>    
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
